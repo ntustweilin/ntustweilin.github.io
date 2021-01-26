@@ -1,0 +1,203 @@
+@charset "UTF-8";
+
+/*-------basic-----------*/
+html {
+	font-size: 62.5%;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #25242c;
+	font-size: 1.4rem;
+	font-family: "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+}
+
+a:hover,
+a:active,
+a:visited,
+a:link {
+	text-decoration: none;
+}
+
+/*-------header-------------*/
+.header {
+	width: 100%;
+	padding: 50px 0px 15px;
+	text-align: center;
+}
+
+.logo {
+	margin: 0 auto;
+	font-size: 5rem;
+	font-family: "Condiment", sans-serif;
+	letter-spacing: 4px;
+}
+
+.logo a {
+	color: #ffffff;
+}
+
+/*------navigation----------*/
+.nav {
+	display: flex;
+	justify-content: space-between;
+	margin: 10px 30px 0;
+	background-color: transparent;
+}
+
+.nav ul {
+	display: flex;	
+	list-style: none;
+}
+
+.nav-item {
+	margin: 5px 10px;
+
+}
+
+.nav-item a {
+	display: inline-block;
+	font-size: 1.1em;
+	letter-spacing: 1px;
+	margin: 0 15px 0;
+	padding: 2px;
+	color: #ffffff;
+	letter-spacing: 1px;
+}
+
+.nav-item a::after {
+	content: '';
+	display: block;
+	width: 0px;
+	margin: 3px auto 0px;
+	border-bottom: 2px solid #f7cf1b;
+	transition: width 0.2s ease-in-out;
+}
+
+.nav-item:nth-child(1) a::after,
+.nav-item a:hover::after {
+	width: 100%;
+}
+
+.search {
+	display: flex;
+	background-color: transparent;
+	padding: 5px 10px;
+	border: 1px solid;
+	border-radius: 10px;
+	color: #5d5656;
+}
+
+.search:focus {
+	outline: none;
+	color: #ffffff;
+	border: 1px solid #ffffff;
+
+}
+
+
+/*----------main-----------*/
+
+
+/*-------footer-------*/
+.footer {
+	background-color: #000000;
+	padding: 30px 50px 10px;
+}
+/*-----my profile-------*/
+
+.myself {
+	float: left;
+	margin-bottom: 25px;
+	color: #ffffff;
+	letter-spacing: 1px;
+	border-left: 3px solid #f7cf1b;
+	padding-left: 10px;
+}
+
+.myself p:nth-child(1) {
+	font-size: 1.5rem;
+}
+
+/*-------socialmedia link----------*/
+.socialmedia {
+	float: right;
+	display: flex;
+	justify-content: center;
+	border-bottom: 2px solid white;
+	margin-bottom: 30px;
+	list-style: none;
+}
+
+.fa-github-square,
+.fa-facebook-square,
+.fa-instagram,
+.fa-linkedin {
+	padding: 5px 10px;
+	font-size: 20px;
+	color: #ffffff;
+}
+
+.fa-github-square:hover,
+.fa-facebook-square:hover,
+.fa-instagram:hover,
+.fa-linkedin:hover {
+	color: #f7cf1b;
+}
+
+/*-------button----------*/
+.footer button {
+	display: inline-block;
+	border-radius: 10px;
+	width: 25%;
+	height: 40px;
+	margin: 5px 20px 5px;
+	font-size: 2rem;
+	outline: none;
+}
+
+.footer button:active {
+	transform: scale(1.1);
+}
+
+.down-cv {
+	color: #ffffff;
+	border: 3px solid #ffffff;
+	background-color: transparent;
+	border-radius: 10px;
+	letter-spacing: 1px;
+}
+
+.email-me {
+	color: #25242c;	
+	border: 3px solid #ffffff;
+	background-color: #ffffff;
+	border-radius: 10px;
+	letter-spacing: 1.5px;
+}
+
+.footer button:hover {
+	cursor: pointer;
+}
+
+.clearfix {
+	clear: both;
+}
+
+.btns {
+	margin: 15px 0 0;
+	text-align: center;
+}
+
+/*-------author------*/
+.author {
+	margin-top: 15px;
+	text-align: center;
+	font-size: 1rem;
+	color: #716c6c;
+}

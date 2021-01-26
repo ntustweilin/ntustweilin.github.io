@@ -1,0 +1,175 @@
+@charset "UTF-8";
+
+/*-------basic-------*/
+html {
+	font-size: 62.5%;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #000000;
+	color: #ffffff;
+	font-size: 1.4rem;
+	font-family: "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+
+}
+
+a:hover,
+a:active,
+a:visited,
+a:link {
+	text-decoration: none;
+}
+
+/*-------header-------*/
+.header {
+	padding: 20px 30px 5px;
+	width: 100%;
+	background-color: #25242c;
+	display: flex;
+	justify-content: space-between;
+}
+
+.logo {
+	font-size: 5rem;
+	font-family: "Condiment", sans-serif;
+	letter-spacing: 4px;
+}
+
+/*-------socialmedia link----------*/
+.socialmedia {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 10px;
+	list-style: none;
+}
+
+.fa-github-square,
+.fa-facebook-square,
+.fa-instagram,
+.fa-linkedin {
+	padding: 5px 10px;
+	font-size: 30px;
+	color: #ffffff;
+}
+
+.fa-github-square:hover,
+.fa-facebook-square:hover,
+.fa-instagram:hover,
+.fa-linkedin:hover {
+	color: #f7cf1b;
+}
+
+/*-------main------*/
+
+.textarea {
+	float: left;
+	padding: 70px 0 0 60px;
+}
+
+.textarea p {
+	margin: 30px 0px 20px;
+}
+
+.textarea p:nth-child(1) {
+	font-size: 5rem;
+	letter-spacing: 2px;
+}
+
+.textarea p:nth-child(2) {
+	font-size: 7rem;
+	letter-spacing: 1.2px;
+}
+
+.textarea p:nth-child(3) {
+	font-size: 2.5rem;
+}
+
+.bg-coding {
+	float: right;
+	opacity: 0.5;
+}
+
+.btnarea {
+	margin-top: 100px;
+ 	text-align: center;
+}
+
+.btnarea button {
+	color: #f7cf1b;
+	background-color: transparent;
+	border: 3px solid #f7cf1b;
+	outline: none;
+	font-weight: bold;
+	font-size: 2rem;
+	letter-spacing: 1.2px;
+	padding: 5px 15px;
+	margin: 0 15px;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.btnarea button:active {
+	transform: scale(1.1);
+}
+/*-------link-------*/
+
+.link {
+	padding: 100px 0 100px;
+	clear: both;
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+}
+.link div {
+	width:25%;
+	height: 200px;
+	box-shadow: 5px 5px 10px #434343,
+				inset 3px 3px 10px #676464;
+	position: relative;
+}
+
+.link div button {
+	position: absolute;
+	outline: none;
+	top: 80%;
+	left: 50%;
+	transform: translate(-50%, -80%);
+	font-size: 2.5rem;
+	color: #000000;
+	border-radius: 10px;
+	padding: 5px 25px ;
+	background-image: linear-gradient(to right, #F09819 0%, #EDDE5D  51%, #F09819  100%);
+	border-color: transparent;
+	background-size: 200% auto;
+	transition: 0.5s;
+}
+.link div button::after {
+	display: inline-block;
+	content: "\2192";
+	padding-left: 15px;
+	transform: translateY(-3px);
+	transition: 0.4s ease-in-out;
+}
+
+.link div button:hover {
+	background-position: right;
+}
+
+.link div button:hover::after {
+	transform: translate(8px,-3px);
+}
+
+.link .link-text {
+	color: #c6bbbb;
+	margin: 0 auto;
+	padding: 50px 15px;
+	text-align: center;
+	font-size: 1.8rem;
+	letter-spacing: 1.2px;
+}
